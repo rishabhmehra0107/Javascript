@@ -294,6 +294,9 @@
   font-weight: bolder;
   cursor: pointer;
 }
+.container .event-container .event-section.filter-section .view-more{
+	margin-top: 2%;
+}
 .container .event-container .event-section.filter-section .view-more button{
     color: rgb(0, 177, 252);
     font-weight: bolder;
