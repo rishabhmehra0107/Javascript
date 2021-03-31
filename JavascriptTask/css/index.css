@@ -1,0 +1,378 @@
+  .container{
+    margin: auto;
+    width: 95%;
+  }
+  .container .topnav-container{
+    border-bottom: 1px solid lightgray;
+  }
+  .container .topnav-container .topnav-section {
+    display: inline-block;
+  }
+  .container .topnav-container .topnav-section.logo-section {
+    width: 15%;
+    margin-top: 1.5%;
+  }
+  .container .topnav-section.logo-section .logo a{
+    display: flex;
+  }
+  .container .topnav-section.logo-section .logo img{
+    width: 95%;
+    margin: 0% 0% 0% 0%;
+  }
+  .container .topnav-container .topnav-section.employee-directory-section {
+    width: 58.4%;
+  }
+  .container .topnav-container .topnav-section.profile-section {
+    width: 26%;
+    font-size: 20px;
+  }
+  .container .topnav-container .topnav-section.employee-directory-section h1{
+    font-family: 'Roboto', sans-serif;
+    color:#3ec0fd; 
+    font-size: 37px;
+    position: absolute;
+    top: 1%;
+  }
+  .container .topnav-container .topnav-section.employee-directory-section p{
+    font-family: 'Roboto', sans-serif;
+    color:rgba(0, 0, 0, 0.7); 
+    font-size: 19px;
+    position: absolute;
+    top:6%
+  }
+  .container .topnav-container .topnav-section.profile-section h2{
+    font-family: 'Roboto', sans-serif;
+    color:#3ec0fd; 
+  }
+  .container .event-container{
+    margin-top: 1%;
+  }
+  .container .event-container .event-section {
+    display: inline-block;
+  }
+  
+  .container .event-container .event-section.filter-section {
+    width: 20%;
+    vertical-align: top;
+    margin-top: 0.5%;
+  }
+  
+  .container .event-container .event-section.employee-display-section {
+    width: 79.7%;
+    color: white;
+    background-color: white;
+  }
+  .container .event-container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .container .event-container .event-section.employee-display-section .user-access-bar{
+    display: inline-block;
+    margin-top: -1%;
+  }
+  .container .event-container .event-section.employee-display-section .user-access-bar.search-employee-section {
+    width: 33%;
+    text-align: left;
+  }
+  .container .event-container .event-section.employee-display-section .user-access-bar.filter-employee-section {
+    width: 33%;
+    text-align: center;
+  }
+  .container .event-container .event-section.employee-display-section .user-access-bar.add-employee-button {
+    width: 33.3%;
+    text-align: right;
+    font-family:'Poppins', sans-serif;
+  }
+  .container .event-container .event-section.employee-display-section .user-access-bar.search-employee-section p{
+    font-family: 'Noto Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.616);
+    display: inline-block;
+    letter-spacing: -1px;
+  }
+  .container .event-container .event-section.employee-display-section .user-access-bar.search-employee-section input{
+    width: 86.9%;
+    -webkit-appearance:textfield;
+    box-sizing: content-box;
+    border: none;
+    outline: none;
+    font-size: 11px;
+  }
+  .container .event-container .event-section.employee-display-section .user-access-bar.search-employee-section .search-box{
+    display: inline-block;
+    width: 51%;
+  background-color: white;
+  border: 1px solid #c4c1c1;
+  border-radius: 0px;
+	align-items: center;
+  padding: 8px 6px;
+  margin-left: 2%;
+  }
+  .container .event-container .event-section.employee-display-section .user-access-bar.search-employee-section .search-box > i {
+    color: #c4c1c1;
+  }
+  .container .event-container .event-section.employee-display-section .search-button button{
+    background: rgb(0, 177, 252);
+    font-size: 22px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    height: 38px;
+    margin-top: 1%;
+    margin-right: 0px;
+    outline: none;
+  }
+  .container .event-container .event-section.employee-display-section .user-access-bar.search-employee-section button{
+
+    display: inline-block;
+    padding: 10px 0px;
+    width: 20%;
+    margin-left: 8%;
+    background-color: #69ba00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .container .event-container .event-section.employee-display-section .user-access-bar.filter-employee-section p{
+    font-family: 'Noto Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.616);
+    font-weight: bold;
+    display: inline-block;
+    letter-spacing: -1px;
+  }
+  
+  .container .event-container .event-section.employee-display-section .user-access-bar.add-employee-button button{
+
+    display: inline-block;
+    height:33px;
+    width: 30%;
+    margin-left: 8%;
+    background-color: #00b1fc;
+    color: white;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .form-popup {
+    display: none;
+    height: 100%;
+    overflow-y: scroll;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    background: white;
+  }
+  
+  .form-popup .form-container {
+    max-width: 300px;
+    padding: 10px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  
+  .form-popup .form-container input[type=text], .form-container input[type=number], .form-container input[type=email] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 0px 0;
+    border: none;
+    background: rgb(241,241,241);
+  }
+  
+  .form-popup .form-container input[type=text]:focus, .form-container input[type=number]:focus, .form-container input[type=email]:focus {
+    outline: none;
+  }
+  .container .event-container .event-section.employee-display-section .employee-section{
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    border: 1px solid lightgrey;
+    color: black;
+  }
+.employee-cards{
+    margin: 2%;
+  }
+  .container .event-container .event-section.employee-display-section .employee-section .employee-card {
+    padding: 10px 10px;
+    max-width: 21.8%;
+    background-color: hsl(0, 2%, 91%);
+    margin: 0% 0.5%;
+    display: none;
+ }
+ .container .event-container .event-section.employee-display-section .employee-section .employee-card img.container-image {
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    height: 64px;
+ }
+ .container .event-container .event-section.employee-display-section .employee-section .employee-card .container-text {
+    display: inline-block;
+    width: 65%;
+    margin-left: 2%;
+ }
+ .container .event-container .event-section.employee-display-section .employee-section .employee-card .container-text h4{
+  font-family: 'Noto Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+   margin: 0;
+   font-size: 13px;
+   letter-spacing: 0px;
+ }
+ .container .event-container .event-section.employee-display-section .employee-section .employee-card .container-text p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+   color: gray;
+   margin: 0;
+ }
+ .container .event-container .event-section.employee-display-section .employee-section .employee-card .container-text .employee-job-title{
+   margin-top: 3%;
+ }
+ .container .event-container .event-section.filter-section .office, .container .event-container .event-section.filter-section .job-title{
+   margin-top: 20%;
+ }
+ .container .event-container .event-section.filter-section button{
+   display: inline-block;
+   background: white;
+   border: none;
+   font-size: 14px;
+   cursor: pointer;
+   font-family: 'Noto Sans', sans-serif;
+   color: rgba(0, 0, 0, 0.6);
+   padding: 0;
+   outline: none;
+ }
+ .container .event-container .event-section.filter-section p{
+   display: inline-block;
+   font-family: 'Noto Sans', sans-serif;
+   font-size:13px;
+   color: rgba(0, 0, 0, 0.6);
+ }
+ .container .event-container .event-section.filter-section h3{
+   margin-left: 0%;
+   font-family: 'Lato', sans-serif;
+   letter-spacing: -1px;
+   font-size: 17px;
+   font-weight: bolder;
+   color: #545353;
+ }
+ .container .event-container .event-section.filter-section .department .department-list{
+   margin-top: -6%;
+ }
+ .container .event-container .event-section.filter-section .office .office-list{
+  margin-top: -6%;
+}
+.container .event-container .event-section.filter-section .job-title .job-title-list{
+  margin-top: -6%;
+}
+.formerror{
+  color: red;
+  font-size: 11px;
+}
+.form-button{
+
+  display: inline-block;
+  height:33px;
+  width: 30%;
+  margin-left: 13%;
+  background-color: #3ec0fd;
+  color: white;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+  outline: none;
+}
+.cancel-button{
+
+  display: inline-block;
+  width: 30%;
+  background-color: #3ec0fd;
+  color: white;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 2px;
+  outline: none;
+
+}
+.container .event-container .event-section.filter-section .view-more{
+  margin-top: 2%;
+}
+.container .event-container .event-section.filter-section .view-more button{
+    color: rgb(0, 177, 252);
+    font-weight: bolder;
+    padding: 0;
+    outline: none;
+    font-size: 11px;
+}
+.form-container h1{
+  display: inline-block;
+}
+.form-field{
+  margin-bottom: 10%;
+}
+.star{
+  color: red;
+}
+#selectType{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 12px;
+  width: 38%;
+    border: 1px solid lightgrey;
+    border-radius: 0px;
+    padding: 8px 10px;
+    color: rgba(0, 0, 0, 0.514);
+    display: inline-block;
+    margin-left: 2%;
+    outline: none;
+}
+.fas.fa-phone-square-alt, .fas.fa-envelope, .fas.fa-comment, .fas.fa-star, .fas.fa-heart{
+  color: gray;
+  margin-right: 2%;
+  margin-top: 3%;
+  font-size: 10px;
+}
+#buttonsHolder{
+  margin-top: 1%;
+  display: inline-block;
+}
+.profile-name{
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: lighter;
+}
+.profile-pic{
+  width: 16%;
+  margin-left: 2%;
+  height: 58px;
+}
+.container .event-container .event-section.employee-display-section .note{
+  color: rgba(0, 0, 0, 0.7);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+}
+.container .event-container .event-section.employee-display-section .note .note-section{
+  color: black;
+}
+@media(min-width: 1440px) and (max-width: 1635px){
+  .container .topnav-container .topnav-section.employee-directory-section {
+    width: 51.4%;
+  }
+  .container .topnav-container .topnav-section.profile-section {
+    width: 30.9%;
+    font-size: 18px;
+  }
+  .profile-pic{
+    width: 12%;
+    margin-left: 2%;
+  }
+}
